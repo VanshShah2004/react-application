@@ -9,9 +9,7 @@ function List(){
     const listItems = fruits.map((fruit)=> <li key={fruit.id}>{fruit.name}</li>   )
 
     return ( 
-    
             <ul>{listItems}</ul>
-        
     )
 }
 export default List;
