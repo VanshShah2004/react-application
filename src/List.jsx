@@ -5,9 +5,9 @@ function List(){
         {id:3,name:"banana",calories:44},
         {id:4,name:"grapes",calories:77}
     ];
-    fruits.sort((a,b)=>a.calories - b.calories);
-    const listItems = fruits.map((fruit)=> <li key={fruit.id}>{fruit.name}</li>   )
-
+    const r = fruits.filter((fruit)=> fruit.calories>80)
+    const listItems = r.map((fruit)=> <li key={fruit.id}>{fruit.name}</li>   )
+   
     return ( 
             <ul>{listItems}</ul>
     )
