@@ -2,14 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import MyComponent from './MyComponent';
+import Counter from './Counter.jsx'
 import './App.css';
 
 function App() {
   return (
-    <>
-    <MyComponent></MyComponent>
-    </>
+    <Counter />
   )
 }
 export default App;
