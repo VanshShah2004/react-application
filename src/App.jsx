@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css';
-import Car from './Car.jsx';
-
+import Food from './Food.jsx';
 function App() {
   return (
-    <Car />    
+    <Food></Food>
+
   )
 }
 export default App;
