@@ -130,3 +130,71 @@ code {
   border:none;
   border-radius:5px;
 }
+
+.todo-list-application {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f7fa;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.todo-list-application h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-list-addition {
+  margin-bottom: 20px;
+}
+
+.todo-list-addition input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.todo-list-addition input:focus {
+  border-color: #007bff;
+}
+
+.todo-list-addition button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.todo-list-addition button:hover {
+  opacity: 0.8;
+}
+
+.todo-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list-container ul {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+}
+
+.todo-list-container li {
+  background: white;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.2s;
+}
+
+.todo-list-container li:hover {
+  background: #e9f3ff;
+}
