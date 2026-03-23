@@ -1,43 +1,42 @@
 import React,{useState} from 'react';
-const Counter = () =>{
+const Counter = ()=>{
     const [count,setCount]=useState(0);
 
-    const incrementCount = ()=>{
-        setCount(count+1);
+    const incrementCount = (a)=>{
+        setCount((prev)=>{
+            return prev+a
+        });
     }
 
-    const decrementCount = ()=>{
-        setCount(count-1); 
-        console.log("Count Decremented by 1")
+    const decrementCount = () =>{
+        setCount(count-1);
     }
 
     const resetCount = ()=>{
         setCount(0);
     }
-
-    return(
-        <div className="counter-container">
-            <h1>The count is : {count}</h1>
-        <button className="counter-button"
-           onClick={decrementCount}
-        >
-            Decrement Count
-        </button>
-        <br />
-        <button className="counter-button"
-            onClick={()=>{incrementCount()}}
-        >
-            increment Count
-        </button>
-        <br />
-        <button className="counter-button"
-            onClick={()=>{resetCount()}}
-        >
-            Reset Count
-        </button>
-        
+    const b=9;
+    return (
+        <div className="counter-application-container">
+            <h1>Counter Application</h1>
+            <div>The count is : {count}</div>
+            <div>
+                <button className="counter-functions"
+                onClick= {
+                    ()=>{incrementCount(b)}
+                }
+                style={{margin:'20px'}}
+                >+</button>
+                <button className="counter-functions"
+                onClick={decrementCount} style={{margin:'20px'}}
+                >-</button>
+                <button className="counter-functions"
+                onClick={resetCount} style={{margin:'20px'}}
+                >
+                    RESET
+                </button>
+            </div>
         </div>
-
     )
 }
 export default Counter;
