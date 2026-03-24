@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 
-import Clock from './Clock.jsx';
+import ComponentA from './ComponentA.jsx';
 
 function App() {
   return (
-    <Clock/>
+    <ComponentA />
   )
 }
 export default App;
