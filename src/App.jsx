@@ -5,18 +5,11 @@ import heroImg from './assets/hero.png'
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
-import ColorPicker from './ColorPicker.jsx'
+import CountState from './CountState.jsx';
 
 function App() {
   return (
-    
-    
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<h1>Hi</h1>} />
-      <Route path='/login' element = {<ColorPicker/> }/>
-    </Routes>
-    </BrowserRouter>
+    <CountState />
    
     
   )
