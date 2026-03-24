@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 
-import WindowResize from './WindowResize';
+import DigitalClock from './DigitalClock.jsx';
 
 function App() {
   return (
-    <WindowResize />    
+    <DigitalClock />
   )
 }
 export default App;
