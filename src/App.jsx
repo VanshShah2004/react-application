@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 
-import ComponentA from './ComponentA.jsx';
+import Reference from './Reference.jsx';
 
 function App() {
   return (
-    <ComponentA />
+    <Reference />    
   )
 }
 export default App;
